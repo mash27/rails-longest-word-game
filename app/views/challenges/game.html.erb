@@ -1,0 +1,11 @@
+<h1>Challenges#game</h1>
+<p>Find me in app/views/challenges/game.html.erb</p>
+
+your grid : <%= @grid %>
+
+<form action="/score" method="get">
+  <label for="answer">What is your answer?</label>
+  <input type="text" id="attempt" name="attempt" placeholder="What is your attempt?">
+  <input type="hidden" id="grid" name="grid" value="<%= @grid %>">
+  <input type="submit" value="Go!">
+</form>
